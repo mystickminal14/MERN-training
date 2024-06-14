@@ -1,0 +1,174 @@
+body {
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+body:hover {
+
+    background-color: rgb(118, 83, 83);
+    transition: 0.3s ease-in-out;
+    z-index: -100;
+
+}
+
+.intern h1 {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ top:-100px;
+    
+}
+
+.p1 {
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    position: relative;
+}
+
+.p1 img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid transparent;
+}
+
+.images {
+    display: flex;
+    gap: 1em;
+
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pone {
+    transform: rotate(-15deg);
+    z-index: 1;
+
+}
+
+.p2,
+.p3,
+.p4 {
+    position: absolute;
+}
+
+.p3 {
+    z-index: -1;
+
+}
+
+.p2 {
+    transform: rotate(-24deg);
+}
+
+.p3 {
+    transform: rotate(-32deg);
+}
+
+.p4 {
+    z-index: -2;
+    transform: rotate(-41deg);
+}
+
+.pone:hover {
+    animation: first 3s forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+.pone:hover~.p2 {
+    animation: second 3s forwards 3s ease-in-out;
+}
+
+.pone:hover~.p3 {
+    animation: third 3s forwards 6s ease-in-out;
+}
+
+.pone:hover~.p4 {
+    animation: fourth 3s forwards 9s ease-in-out;
+}
+.pone:hover ~ .intern h1 {
+    animation: top-bottom 3s forwards 12s ease-in-out;
+}
+
+
+@keyframes first {
+    0% {
+        transform: scale(1.1) rotate(-15deg);
+
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-500px);
+    }
+
+}
+
+@keyframes second {
+    0% {
+        transform: scale(1.1) rotate(-24deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-200px);
+    }
+
+}
+
+@keyframes third {
+    0% {
+        transform: scale(1.1) rotate(-32deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+
+
+}
+
+@keyframes fourth {
+    0% {
+        transform: scale(1.1) rotate(-41deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(500px);
+    }
+
+
+}
+
+@keyframes top-bottom {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 0; 
+    }
+}

@@ -1,0 +1,39 @@
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    gap:0.3em;
+    flex-wrap:wrap;
+}
+.menu .left-menu input[type='text']{
+    width:max-width(800px);
+    padding:10px;
+    border-radius:5px;
+}
+.menu .mid-menu ,.menu .left-menu{
+    display:flex;
+    align-items: center;
+    gap:0.4em;
+}
+.menu .mid-menu{
+    gap:1em;
+}
+.menu .mid-menu a{
+font-size:18px;
+color:black;
+text-decoration: none;
+transition:0.3s ease-in-out;
+}
+.menu .mid-menu a:hover{
+   transform:translateY(-2px);
+}
+.menu .mid-menu a:active{
+   color:blue;
+    font-weight: 8000;
+}
+p::before{
+content:"minal";
+}
+p::after{
+    content:"minal";
+    }

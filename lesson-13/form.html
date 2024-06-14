@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <script src="https://kit.fontawesome.com/402d710096.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        width: 300px;
+
+        gap: 0.6em;
+        box-shadow: 0px 0px 5px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        padding: 0.4em;
+        width: 280px;
+      }
+      button {
+        width: 294px;
+        background: blueviolet;
+        color: white;
+        margin-top:10px;
+       outline:none;
+       border:0px solid;
+        cursor:pointer;
+        padding: 0.6em;
+      }
+      button:hover{
+background-color: rgb(79, 79, 210);
+      }
+      .fa-eye{
+        position: absolute;
+        right:10px;
+        top:30px;
+        
+      }
+      .user{
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+      <div>
+        <label for="Username">Username</label>
+        <input type="text" id="username" placeholder="enter username" />
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input type="text" id="username" placeholder="enter email" />
+      </div>
+      <div class="user">
+        <label for="Password">Password</label>
+        <input type="password" id="username" placeholder="enter password" />
+        <i class="fa-solid fa-eye"></i>
+      </div>
+      <button>Register</button>
+ 
+    </div>
+  </body>
+</html>
